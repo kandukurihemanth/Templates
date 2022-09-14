@@ -80,16 +80,6 @@ variable "instance_initiated_shutdown_behavior" {
   type        = string
   
 }
-variable "resource_tags" {
-   
-}
-variable "namespace" {
-  description = "namespace for unique resource naming"
-  type = string
-  
-}
-
-
 
 variable "key_name" {
   description = "Key name of the Key Pair to use for the instance; which can be managed using the `aws_key_pair` resource"
