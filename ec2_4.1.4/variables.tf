@@ -2,7 +2,7 @@ variable "region"{
   description = "region to be deployed"
   type = string
 }
-varaibale "availability_zone" {
+variable "availability_zone" {
   description = "az to be launched"
   type = string
 }
