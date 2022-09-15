@@ -1,6 +1,4 @@
-data "aws_availability_zones" "available" {
-  state = "available"
-}
+
 provider "aws" {
   region = var.region
 }
@@ -14,7 +12,7 @@ module "ec2-instance" {
   instance_type                              = var.instance_type
   key_name                                   = var.key_name
   monitoring                                 = var.monitoring
-  availability_zone                          =  data.aws_availability_zones.available
+  availability_zone                          = var.availability_zone
   capacity_reservation_specification         = var.capacity_reservation_specification
   cpu_credits                                = var.cpu_credits
   disable_api_termination                    = var.disable_api_termination
