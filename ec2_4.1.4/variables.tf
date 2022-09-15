@@ -1,3 +1,7 @@
+variable "region"{
+  description = "region to be deployed"
+  type = string
+}
 variable "create" {
   description = "Whether to create an instance"
   type        = bool
