@@ -1,6 +1,9 @@
 data "aws_availability_zones" "available" {
   state = "available"
 }
+provider "aws" {
+  region = var.region
+}
 module "ec2-instance" {
   source                                     = "terraform-aws-modules/ec2-instance/aws"
   version                                    = "4.1.4"
