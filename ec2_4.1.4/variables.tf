@@ -4,6 +4,7 @@ variable "region"{
 }
 varaibale "availability_zone" {
   description = "az to be launched"
+  type = string
 }
 variable "create" {
   description = "Whether to create an instance"
