@@ -116,6 +116,6 @@ module "eks" {
   aws_auth_fargate_profile_pod_execution_role_arns  = var.aws_auth_fargate_profile_pod_execution_role_arns
   aws_auth_roles                             = var.aws_auth_roles
   aws_auth_users                             = var.aws_auth_users
-  aws_auth_accounts                          = var.aws-aws_auth_accounts
+  aws_auth_accounts                          = var.aws_auth_accounts
 
    }
