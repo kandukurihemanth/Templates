@@ -1,5 +1,5 @@
 variable "region" {
-  Description = "resources to be deployed in region"
+  description = "resources to be deployed in region"
   type = string
 }
 variable "create" {
